@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers votre fichier CSS -->
+    <title>Devenir Chauffeur</title>
+    <style>
+        /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #f5922e;
+    color: #fff;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Devenir Chauffeur</h1>
+    </header>
+    <main>
+        <form action="traiter_formulaire.php" method="POST" enctype="multipart/form-data">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="adresse">Adresse :</label>
+            <textarea id="adresse" name="adresse" rows="4" required></textarea>
+
+            <label for="photo">Photo :</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <!-- Ajoutez d'autres champs ici (numéro de téléphone, etc.) -->
+
+            <button type="submit">Envoyer la demande</button>
+        </form>
+    </main>
+</body>
+</html>

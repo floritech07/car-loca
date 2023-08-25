@@ -1,0 +1,37 @@
+#dir{
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+.form-control.custom-select {
+  border-radius: 5px;
+}
+#btp{
+  margin-top: 29px;
+}
+#for{
+  width: 800px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.formulaire{                                                                                                                                                        
+  margin-left: 80px;
+}
+.card{
+  width: 280px;
+  border-radius: 20px;
+}
+#cardy{
+  color: white;
+  background:orange;
+  width: 46px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.btn-warning{
+  background: orange;
+}
+.card-title {
+  color: black;
+}
